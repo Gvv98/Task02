@@ -324,6 +324,10 @@ And run it with:
 
 This will execute the matrix multiplication as done in Julia.
 
-With these steps, you have successfully implemented vector summation and matrix multiplication both in Julia and C. You can test the programs on your system to ensure they work as expected.
+## Possible Issues and Checks
+
+- The summation codes do not show issues for very large N, but both Julia and C codes crash when attempting to perform the product for very large N (around 10^5). This is likely due to a memory issue, as both codes create two NxN matrices that become too large to handle with the current implementation.
+
+- To verify the correctness of the codes (when N is not too large), we have included a probe variable, `check`, inside the codes. For each component `z` of the output (whether a vector or a matrix), it ensures that it matches the expected value `s`. Specifically, for each component, we compute `check += z - s`, which will be zero if every element satisfies `z = s`.
 
 
