@@ -3,11 +3,7 @@
 
 In this guide, we'll demonstrate how to perform vector summation and matrix multiplication using two programming languages: a compiled language (C) and an interpreted language (Julia).
 
-## Step 1: Install the necessary packages inside the AlmaLinux container
-
-First, we need to install all the necessary packages to use both Julia and C.
-
-### Install Julia
+## Step 1: Install Julia
 
 Start by installing the `curl` package:
 
