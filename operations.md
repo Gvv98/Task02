@@ -41,9 +41,12 @@ To begin with, let's explore the summation operation `a*X + Y` where `X` and `Y`
 
 ```julia
 function sum(N, xval, yval, a, s)
+    #Define the vectors x and y
     x = fill(xval, N)
     y = fill(yval, N)
+    #Here we sum the vectors
     z = a * x + y
+    #Initialize "check" variable
     check = 0
     for i in 1:N
         check += z[i] - s
