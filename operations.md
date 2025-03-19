@@ -52,7 +52,7 @@ function sum(N, xval, yval, a, s)
 end
 ```
 
-This function takes in values `N`, `xval`, `yval`, `a`, and `s`, where `s` is the expected sum value for each component of the final sum vector. You can use this function for any `N`, `xval`, and `yval` by calling it on the terminal.
+This function takes in values `N`, `xval`, `yval`, `a`, and `s`, where `s` is the expected sum value for each component of the final sum vector. You can use this function for any `a`, `xval`, and `yval` by calling it on the terminal.
 
 ## Step 3: Matrix Multiplication in Julia
 
@@ -304,7 +304,7 @@ int main() {
 }
 ```
 
-After writing the code, save it with `^O` and press Enter. To exit `nano`, press `^X`.
+As before, save the code with `^O`, press Enter and  press `^X`.
 
 Now, compile the program with:
 
