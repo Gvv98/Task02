@@ -1,4 +1,4 @@
-```markdown
+
 # Operations in Julia and C: Sum of Vectors and Matrix Multiplication
 
 In this guide, we'll demonstrate how to perform vector summation and matrix multiplication using two programming languages: a compiled language (C) and an interpreted language (Julia).
@@ -40,7 +40,7 @@ You can enter your Julia code directly in the terminal.
 To begin with, let's explore the summation operation `a*X + Y` where `X` and `Y` are vectors of size `N` with entries all equal to `x` and `y` respectively, and `a` is a constant. The following function in Julia calculates this summation:
 
 ```julia
-function sommatoria(N, xval, yval, a, s)
+function sum(N, xval, yval, a, s)
     x = fill(xval, N)
     y = fill(yval, N)
     z = a * x + y
@@ -53,14 +53,14 @@ function sommatoria(N, xval, yval, a, s)
 end
 ```
 
-This function takes in values `N`, `xval`, `yval`, `a`, and `s`, where `s` is the expected sum value for each component of the final sum vector. You can use this code for any `N`, `xval`, and `yval`.
+This function takes in values `N`, `xval`, `yval`, `a`, and `s`, where `s` is the expected sum value for each component of the final sum vector. You can use this function for any `N`, `xval`, and `yval`.
 
 ## Step 3: Matrix Multiplication in Julia
 
 Next, let's look at how to perform matrix multiplication `A*B = C`, where `A` and `B` are `NxN` matrices with entries all equal to `a` and `b`, respectively. The following Julia function computes the matrix multiplication:
 
 ```julia
-function prodotto(N, aval, bval, s)
+function product(N, aval, bval, s)
     a = fill(aval, N, N)
     b = fill(bval, N, N)
     z = zeros(N, N)
@@ -321,8 +321,6 @@ And run it with:
 
 This will execute the matrix multiplication as done in Julia.
 
----
-
 With these steps, you have successfully implemented vector summation and matrix multiplication both in Julia and C. You can test the programs on your system to ensure they work as expected.
 
-```
+
