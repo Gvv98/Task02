@@ -82,7 +82,7 @@ function product(N, aval, bval, s)
 end
 ```
 
-Similarly to the sum, the `prodotto` function takes the arguments `a`, `b`, `N`, and the expected value `s` for the components of matrix `C`. The function computes the matrix multiplication and checks the result using the verification step.
+Similarly to the sum, the `product` function takes the arguments `a`, `b`, `N`, and the expected value `s` for the components of matrix `C`. The function computes the matrix multiplication and checks the result using the verification step.
 
 Once you finish working with Julia, you can exit the Julia environment by typing:
 
